@@ -1,0 +1,18 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.global-error {
+  @include center;
+
+  &__wrapper {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &__message {
+    font-size: 16px;
+  }
+}

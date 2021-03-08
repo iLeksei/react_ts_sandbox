@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+      "dom"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["__test__", "src"],
+  "exclude": [
+    "__mocks__",
+    "docs",
+    "dist",
+    "stub",
+    "node_modules",
+    "build",
+    "src/testConfig.js"
+  ],
+  "types": [
+    "typePatches"
+  ]
+}

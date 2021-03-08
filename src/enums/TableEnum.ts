@@ -1,0 +1,5 @@
+export enum TableEnum {
+    USE_LOADER ="USE_LOADER",
+    SET_TABLE_DATA = "SET_TABLE_DATA",
+    LOAD_TABLE_DATA = "LOAD_TABLE_DATA",
+}
