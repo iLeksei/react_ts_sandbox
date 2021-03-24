@@ -37,6 +37,8 @@ export class MainPage extends React.Component<any, any> {
     }
 
     render() {
+        // @ts-ignore
+        // @ts-ignore
         return (
             <Container fluid>
                     <Navbar bg="light" expand="md">
@@ -57,8 +59,8 @@ export class MainPage extends React.Component<any, any> {
                             <Switch>
                                 <ErrorBoundary>
                                     <Profiler id={"counter"} onRender={(...settings) => {console.log(settings)}}>
-                                            <Route exac path={"/counter"} component={Counter}/>
-                                            <Route exac path={"/table"} component={Table} />
+                                        <Route exact  path={"/counter"} component={Counter}/>
+                                        <Route exact path={"/table"} component={Table} />
                                     </Profiler>
                                 </ErrorBoundary>
                             </Switch>

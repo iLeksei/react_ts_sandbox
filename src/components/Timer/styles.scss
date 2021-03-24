@@ -1,0 +1,24 @@
+.timer-container {
+  animation: pulse 1s infinite;
+  height: 13px;
+  width: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(172, 180, 177, 0.11);
+    box-shadow: 0 0 0 0 rgba(172, 180, 177, 0.11);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 5px rgba(172, 180, 177, 0.11);
+    box-shadow: 0 0 0 5px rgba(172, 180, 177, 0.11);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(172, 180, 177, 0.11);
+    box-shadow: 0 0 0 0 rgba(172, 180, 177, 0.11);
+  }
+}
