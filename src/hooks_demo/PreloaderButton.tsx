@@ -29,6 +29,7 @@ export const PreloaderButton = (props: IProps): ReactElement => {
 
     return (
         <div>
+            <div data-testid="post">{post?.id}</div>
             <Button
                 id="request-btn"
                 onClick={fetchUserPost}
