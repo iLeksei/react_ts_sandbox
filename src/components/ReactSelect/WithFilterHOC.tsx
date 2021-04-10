@@ -18,6 +18,7 @@ export const WithFilterHOC = (props: TProps): ReactElement => {
             return !props.filteredOptions?.includes(option.value)
                 && option.label?.toLowerCase().includes(input.toLowerCase());
         }
+        return true;
     };
 
     return <ReactSelect {...props} filterOption={filterOption} />;
